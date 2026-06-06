@@ -3,9 +3,6 @@ import { IsDate, IsString, IsNotEmpty } from 'class-validator';
 
 export class CreateReservationDto {
   @IsDate()
-  timestamp: Date | undefined;
-
-  @IsDate()
   @Type(() => Date)
   startDate!: Date;
 
